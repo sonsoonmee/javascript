@@ -20,13 +20,12 @@
 <!--/LyWrap--></div>
 
 <script>
-var km = prompt('거리를 입력해주세요 / 단위:km')
-
+var km = prompt('거리를 입력해주세요 / 단위:km');
 if(km < 5) {
     document.write(km + 'km 1,000원');
-} else if(5 <= km && km < 10) {
+} else if(km < 10) {
     document.write(km + 'km 2,000원');
-} else if(10 <= km) {
+} else {
     document.write(km + 'km 3,000원');
 }
 </script>
