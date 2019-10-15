@@ -20,16 +20,18 @@
 <!--/LyWrap--></div>
 
 <script>
-var sum = 0;
-var odd = 0;
+var sum1 = 0;
+var sum2 = 0;
 for(i = 0; i <= 100; i++) {
-    sum = i + sum;
+    sum1 = i + sum1;
 }
-for(j = 0; j < 50; j++) {
-    odd = (2 * j) + odd;
+for(j = 0; j <= 100; j++) {
+    if(j % 2 == 0) {
+        sum2 = j + sum2;
+    }
 }
-document.write('1 ~ 100 까지의 합 ' + sum + '<br>');
-document.write('1 ~ 100 까지 중 짝수의 합 ' + odd);
+document.write('1 ~ 100 까지의 합 ' + sum1 + '<br>');
+document.write('1 ~ 100 까지 중 짝수의 합 ' + sum2);
 </script>
 
 </body>
