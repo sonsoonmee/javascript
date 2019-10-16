@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ko" prefix="fb: http://www.facebook.com/2008/fbml">
+<head>
+<meta charset="UTF-8">
+<title>Question3</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+</head>
+<body>
+<div class="LyWrap">
+
+<!--CONTENTS-AREA-->
+<div class="LyContents">
+<main class="LyMain" role="main">
+
+<!--/LyMain--></main>
+<!--/LyContents--></div>
+<!--/CONTENTS-AREA-->
+
+<!--/LyWrap--></div>
+
+<script>
+var sum1 = 0;
+var sum2 = 0;
+for(i = 0; i <= 100; i++) {
+    sum1 = i + sum1;
+}
+for(j = 0; j <= 100; j++) {
+    if(j % 2 == 0) {
+        sum2 = j + sum2;
+    }
+}
+document.write('1 ~ 100 까지의 합 ' + sum1 + '<br>');
+document.write('1 ~ 100 까지 중 짝수의 합 ' + sum2);
+</script>
+
+</body>
+</html>
