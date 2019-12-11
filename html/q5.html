@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ko" prefix="fb: http://www.facebook.com/2008/fbml">
+<head>
+<meta charset="UTF-8">
+<title>Question5</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+</head>
+<body>
+<div class="LyWrap">
+
+<!--CONTENTS-AREA-->
+<div class="LyContents">
+<main class="LyMain" role="main">
+<ul class="">
+    <li>대문자 변환</li>
+    <li>문자열의 첫글자만 대문자로 변환</li>
+    <li>소문자로 변환</li>
+    <li>마침표, 공백 추가</li>
+</ul>
+<!--/LyMain--></main>
+<!--/LyContents--></div>
+<!--/CONTENTS-AREA-->
+
+<!--/LyWrap--></div>
+
+<script>
+const title = 'lorem ipsum   ';
+const content1 = 'lorem ipsum dolor sit amet, consectetur adipisicing elit';
+const content2 = 'sed do eiusmod tempor incididunt UT labore et dolore magna aliqua';
+const content3 = 'ut enim ad minim VENIAM';
+
+// toUpperCase() : 소 -> 대
+// toLowerCase() : 대 -> 소
+// replace() : 치환
+document.write(
+    title.toUpperCase() + "<br><br>" + 
+    content1.replace('l', 'L') + ", " + 
+    content2.toLowerCase() + ", " + 
+    content3.toLowerCase() + "."
+);
+</script>
+
+</body>
+</html>
