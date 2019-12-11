@@ -32,12 +32,13 @@ const content3 = 'ut enim ad minim VENIAM';
 
 // toUpperCase() : 소 -> 대
 // toLowerCase() : 대 -> 소
-// replace() : 치환
+const content = content1.toLowerCase() + ", " + content2.toLowerCase() + ", " + content3.toLowerCase() + ".";
+
+// index 는 0부터 시작
+// charAt(index) : n번째 문자열 반환
+// slice(start, end) : start부터 end까지 자르기, end값이 없으면 start부터 끝까지
 document.write(
-    title.toUpperCase() + "<br><br>" + 
-    content1.replace('l', 'L') + ", " + 
-    content2.toLowerCase() + ", " + 
-    content3.toLowerCase() + "."
+    title.toUpperCase() + "<br><br>" + content.charAt(0).toUpperCase() + content.slice(1)
 );
 </script>
 
