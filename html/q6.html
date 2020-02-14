@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ko" prefix="fb: http://www.facebook.com/2008/fbml">
+<head>
+<meta charset="UTF-8">
+<title>Question6</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+</head>
+<body>
+<div class="LyWrap">
+
+<!--CONTENTS-AREA-->
+<div class="LyContents">
+<main class="LyMain" role="main">
+
+<!--/LyMain--></main>
+<!--/LyContents--></div>
+<!--/CONTENTS-AREA-->
+
+<!--/LyWrap--></div>
+
+<script>
+// https://developer.mozilla.org/en-US/docs/Web/API/URL
+
+const url = "https://lineconomi.me/restaurants/5b3d8c4da98c98a2c1ac5774?from=web&userid=123291239";
+
+var parser = new URL(url);
+
+document.write(`
+    protocal = ${parser.protocol}<br>
+    domain = ${parser.host}<br>
+    path = ${parser.pathname}<br>
+    querystrings = {<br>
+        from : ${parser.searchParams.get("from")},<br>
+        userid : ${parser.searchParams.get("userid")}<br>
+    }
+`);
+
+// protocal = 'https'
+// domain = 'lineconomi.me'
+// path = '/restaurants/5b3d8c4da98c98a2c1ac5774'
+// querystrings = {
+//    from: 'web',
+//    userid: '123291239'
+// }
+
+</script>
+
+</body>
+</html>
